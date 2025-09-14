@@ -7,15 +7,18 @@ We introduce **VISTA**, a **visual storytelling** dataset with new **nine storyt
 
 
 ## Dataset Details
-VISTA dataset contained 59,407 stories, split into training, validation, and test sets with a 60/20/20 split: 35,644 for training, 11,881 for validation, and 11,882 for testing.
+VISTA dataset contained 59,407 stories, split into training, validation, and test sets with a 60/20/20 split: 35,644 for training, 11,881 for validation, and 11,882 for testing. Each data split is exported as a single JSON file, where each story is formatted as a JSON object using the following structure.
 
 ```json
 {
-  "Story ID": {
-    "aspect": "Enhanced Story Aspect",
-    "story": "dataset story",
-    "image source": ["Image filenames sourced from VIST"]
-  }
+    {
+        "Story ID": {
+            "aspect": "Enhanced Story Aspect",
+            "story": "dataset story",
+            "image source": ["Image filenames sourced from VIST"]
+        }
+    },
+    ...
 }
 ```
 
